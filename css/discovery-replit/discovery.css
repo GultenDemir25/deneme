@@ -1,0 +1,56 @@
+:root{
+    --color1:red;
+    --color2:blue;
+    --color3:gray;
+    --color4:#efefef;
+
+}
+.discovery-card{
+    border:1px solid var(--color1);
+    border-radius: 5px;
+
+}
+.discovery-card .lines{
+    background-color: var(--color1);
+    height: 10px;
+    border-radius: 5px 5px 0 0;
+     
+}
+
+.discovery-card .lines span{
+    background-color: var(--color2);
+    height: 10px;
+    width: 25%;
+    display:block;
+    border-radius: 5px 5px 0 0;
+     
+}
+
+.discovery-card .content{
+    padding:20px;
+
+
+}
+.discovery-card .content h2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px ;
+
+}
+
+.discovery-card .content h2::before{
+    content: "1";
+    background-color: var(--color1);
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color4);
+
+
+}
+
