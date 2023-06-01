@@ -1,0 +1,22 @@
+.login{
+    background-color: white;
+    display: inline-block;
+    padding:5px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.login input{
+    background: none;
+    color: rgb(166, 4, 4);
+   
+}
+
+.login button{
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    bottom: 2px;
+}
