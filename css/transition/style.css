@@ -1,0 +1,70 @@
+:root{
+    --color1:#F2D8D8;
+    --color2:#5C8984;
+    --color3:#545B77;
+    --color4:black;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+nav.left-menu{
+    background-color: var(--color1);
+    position: absolute;
+    left:-110px;
+    top:0;
+    bottom:0;
+    transition: left 1s;
+}
+
+nav.left-menu .title{
+    background-color: var(--color2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color3);
+    font-weight: 700;
+}
+
+nav.left-menu .title label{
+    cursor:pointer;
+    transition: transform 1s;
+}
+
+nav.left-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 50px 0 20px;
+    line-height: 30px;
+   
+}
+
+nav.left-menu ul a{
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: 600;
+    display: block;
+    transition: transform 0.5s;
+}
+
+nav.left-menu ul a:hover{
+    color: var(--color4);
+    transform: translateX(10px);
+
+
+}
+.chk-menu{
+    display: none;
+}
+
+.chk-menu:checked +nav {
+    left:0;
+}
+
+.chk-menu:checked +nav label{
+    transform: rotate(180deg);
+}
